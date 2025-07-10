@@ -1,0 +1,30 @@
+@media print {
+    body {
+      background: white;
+      color: black;
+    }
+  
+    .heading, footer {
+      display: none; /* Oculta cabeçalho e rodapé no PDF */
+    }
+  
+    .conteudo, .conteudo-projetos-habilidades {
+      flex-direction: column; /* Força empilhar os blocos */
+      margin: 0;
+      padding: 0;
+    }
+  
+    .projetos, .habilidades {
+      margin: 0 0 30px 0;
+    }
+  
+    h1, h2 {
+      page-break-after: avoid;
+    }
+  
+    * {
+      box-shadow: none !important;
+      background: none !important;
+    }
+  }
+  
